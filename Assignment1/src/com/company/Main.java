@@ -13,7 +13,6 @@ public class Main {
 
         //loop through numbers
         for(int i = 1; i <= numbers; i++){
-            System.out.println("What are the numbers?");
             int next = console.nextInt();
             sum += next;
         }
