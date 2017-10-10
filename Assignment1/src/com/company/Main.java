@@ -11,5 +11,17 @@ public class Main {
         int numbers = console.nextInt();
         int sum = 0;
 
+        //loop through numbers
+        for(int i = 1; i <= numbers; i++){
+            System.out.println("What are the numbers?");
+            int next = console.nextInt();
+            sum += next;
+        }
+
+        //calculate average
+        double avg = (double) sum / numbers;
+        System.out.println();
+        System.out.println("Average = " + avg);
+
     }
 }
