@@ -22,23 +22,19 @@ public class Main {
             txtWords.add(word);
         }
 
-        // A collection that contains no duplicate elements, preserves  the add orders
-        Set<String> str = new LinkedHashSet<>(txtWords);
+        Set<String> newString = new LinkedHashSet<>(txtWords);
 
-        // store the results into a new arrayList
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> newList = new ArrayList<String>();
 
-        // loop through the set
-        for (String key : str) {
-            // if the word freq is less than 2
+
+        for (String key : newString) {
             if (Collections.frequency(txtWords, key) < 2) {
-                // add it to the arrayList
-                result.add(key);
+                newList.add(key);
             }
         }
 
 
         //print out words
-        System.out.println(result);
+        System.out.println(newList);
     }
 }
