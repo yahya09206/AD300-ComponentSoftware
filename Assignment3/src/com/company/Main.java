@@ -12,5 +12,8 @@ public class Main {
 
         //New Scanner object
         Scanner input = new Scanner(new File("agile_manifesto.txt"));
+
+        //Array list to store words
+        List<String> words = new ArrayList<String>();
     }
 }
