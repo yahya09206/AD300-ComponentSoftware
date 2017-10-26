@@ -15,5 +15,10 @@ public class Main {
 
         //Array list to store words
         List<String> words = new ArrayList<String>();
+
+        Set<String> unique = new HashSet<String>(words);
+        for (String key : unique) {
+            System.out.println(key + ": " + Collections.frequency(words, key));
+        }
     }
 }
