@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String argv[]) throws FileNotFoundException {
         // read the text file
-        Scanner scanf = new Scanner(new File("src/com/company/BS.txt"));
+        Scanner scanf = new Scanner(new File("BS.txt"));
         // storage as an arraylist of type integers
         ArrayList<Integer> list = new ArrayList<Integer>();
 
